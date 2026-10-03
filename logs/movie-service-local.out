@@ -1,0 +1,219 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.cinepass:movie-service >---------------------
+[INFO] Building movie-service 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.3.5:run (default-cli) > test-compile @ movie-service >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ movie-service ---
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ movie-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ movie-service ---
+[INFO] skip non existing resourceDirectory C:\Users\annam\Downloads\soa_prototype\backend\movie-service\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ movie-service ---
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] <<< spring-boot:3.3.5:run (default-cli) < test-compile @ movie-service <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.3.5:run (default-cli) @ movie-service ---
+[INFO] Attaching agents: []
+Picked up JAVA_TOOL_OPTIONS: -Dnet.bytebuddy.experimental=true
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.5)
+
+2026-09-23T11:47:11.972+05:30  INFO 23364 --- [movie-service] [           main] c.c.movie.MovieServiceApplication        : Starting MovieServiceApplication using Java 25.0.1 with PID 23364 (C:\Users\annam\Downloads\soa_prototype\backend\movie-service\target\classes started by annam in C:\Users\annam\Downloads\soa_prototype\backend\movie-service)
+2026-09-23T11:47:11.982+05:30  INFO 23364 --- [movie-service] [           main] c.c.movie.MovieServiceApplication        : The following 1 profile is active: "prod"
+2026-09-23T11:47:16.603+05:30  INFO 23364 --- [movie-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-23T11:47:17.347+05:30  INFO 23364 --- [movie-service] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 715 ms. Found 1 JPA repository interface.
+2026-09-23T11:47:18.362+05:30  INFO 23364 --- [movie-service] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8b9b7b5e-d467-3b76-8c07-fda5ea790b36
+2026-09-23T11:47:19.648+05:30  WARN 23364 --- [movie-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-09-23T11:47:19.659+05:30  WARN 23364 --- [movie-service] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/C:/Users/annam/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.31/tomcat-embed-core-10.1.31.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+2026-09-23T11:47:20.874+05:30  INFO 23364 --- [movie-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8082 (http)
+2026-09-23T11:47:20.927+05:30  INFO 23364 --- [movie-service] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-23T11:47:20.928+05:30  INFO 23364 --- [movie-service] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-09-23T11:47:21.240+05:30  INFO 23364 --- [movie-service] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-09-23T11:47:21.243+05:30  INFO 23364 --- [movie-service] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9000 ms
+2026-09-23T11:47:22.356+05:30  INFO 23364 --- [movie-service] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-23T11:47:22.622+05:30  INFO 23364 --- [movie-service] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-09-23T11:47:22.770+05:30  INFO 23364 --- [movie-service] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-09-23T11:47:24.121+05:30  INFO 23364 --- [movie-service] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-23T11:47:24.230+05:30  INFO 23364 --- [movie-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-23T11:47:24.871+05:30  INFO 23364 --- [movie-service] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@649009d6
+2026-09-23T11:47:24.878+05:30  INFO 23364 --- [movie-service] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-23T11:47:28.883+05:30  INFO 23364 --- [movie-service] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-23T11:47:29.294+05:30  INFO 23364 --- [movie-service] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-23T11:47:33.210+05:30  INFO 23364 --- [movie-service] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2026-09-23T11:47:33.417+05:30  WARN 23364 --- [movie-service] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-09-23T11:47:33.465+05:30  INFO 23364 --- [movie-service] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2026-09-23T11:47:33.727+05:30  INFO 23364 --- [movie-service] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-09-23T11:47:33.822+05:30  INFO 23364 --- [movie-service] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-09-23T11:47:33.832+05:30  INFO 23364 --- [movie-service] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T11:47:33.871+05:30  INFO 23364 --- [movie-service] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-09-23T11:47:33.872+05:30  INFO 23364 --- [movie-service] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-09-23T11:47:33.874+05:30  INFO 23364 --- [movie-service] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-09-23T11:47:33.875+05:30  INFO 23364 --- [movie-service] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-09-23T11:47:33.876+05:30  INFO 23364 --- [movie-service] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-09-23T11:47:33.877+05:30  INFO 23364 --- [movie-service] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-09-23T11:47:33.879+05:30  INFO 23364 --- [movie-service] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-09-23T11:47:35.122+05:30  INFO 23364 --- [movie-service] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-09-23T11:47:35.128+05:30  INFO 23364 --- [movie-service] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-09-23T11:47:35.135+05:30  INFO 23364 --- [movie-service] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-09-23T11:47:35.142+05:30  INFO 23364 --- [movie-service] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1790144255139 with initial instances count: 1
+2026-09-23T11:47:35.162+05:30  INFO 23364 --- [movie-service] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MOVIE-SERVICE with eureka with status UP
+2026-09-23T11:47:35.164+05:30  INFO 23364 --- [movie-service] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1790144255164, current=UP, previous=STARTING]
+2026-09-23T11:47:35.172+05:30  INFO 23364 --- [movie-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MOVIE-SERVICE/Karthikeyan:movie-service:8082: registering service...
+2026-09-23T11:47:35.244+05:30  INFO 23364 --- [movie-service] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8082 (http) with context path '/'
+2026-09-23T11:47:35.247+05:30  INFO 23364 --- [movie-service] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8082
+2026-09-23T11:47:35.315+05:30  INFO 23364 --- [movie-service] [           main] c.c.movie.MovieServiceApplication        : Started MovieServiceApplication in 25.844 seconds (process running for 28.226)
+2026-09-23T11:47:35.322+05:30  INFO 23364 --- [movie-service] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MOVIE-SERVICE/Karthikeyan:movie-service:8082 - registration status: 204
+2026-09-23T11:48:42.935+05:30  INFO 23364 --- [movie-service] [nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-23T11:48:42.937+05:30  INFO 23364 --- [movie-service] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-23T11:48:42.942+05:30  INFO 23364 --- [movie-service] [nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-09-23T11:52:33.885+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T11:57:33.892+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T14:06:57.919+05:30  WARN 23364 --- [movie-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h8m37s116ms88µs100ns).
+2026-09-23T14:10:36.811+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T14:15:36.823+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T14:20:36.847+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T14:25:36.863+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T14:30:36.879+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T14:35:36.890+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T14:40:36.912+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T14:45:36.923+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T14:50:36.927+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T14:55:36.933+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T15:00:36.949+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T15:05:36.960+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T15:10:36.965+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T15:15:36.970+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T15:20:36.972+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T15:25:36.988+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T15:30:36.991+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T18:19:34.263+05:30  WARN 23364 --- [movie-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h49m5s227ms106µs900ns).
+2026-09-23T18:24:15.027+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T18:29:15.032+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T18:34:15.037+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T18:48:29.106+05:30  WARN 23364 --- [movie-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m21s993ms275µs700ns).
+2026-09-23T18:52:07.031+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T19:07:44.541+05:30  WARN 23364 --- [movie-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m15s422ms306µs).
+2026-09-23T19:11:08.931+05:30  WARN 23364 --- [movie-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m24s383ms959µs600ns).
+2026-09-23T19:11:46.842+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T19:16:40.904+05:30  WARN 23364 --- [movie-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m1s969ms416µs100ns).
+2026-09-23T19:20:18.778+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T20:16:03.340+05:30  WARN 23364 --- [movie-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52m52s404ms496µs900ns).
+2026-09-23T20:17:41.181+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T20:22:45.622+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T20:27:45.626+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T20:57:15.348+05:30  WARN 23364 --- [movie-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=29m37s544ms362µs).
+2026-09-23T21:01:53.173+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T21:06:53.176+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T21:16:29.196+05:30  WARN 23364 --- [movie-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m13s826ms677µs300ns).
+2026-09-23T21:19:37.047+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T21:23:44.872+05:30  WARN 23364 --- [movie-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m15s665ms555µs600ns).
+2026-09-23T21:28:22.713+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T22:37:38.406+05:30  WARN 23364 --- [movie-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h8m23s511ms90µs400ns).
+2026-09-23T22:41:16.223+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T22:46:16.227+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T22:51:16.231+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-23T23:02:27.931+05:30  WARN 23364 --- [movie-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m49s498ms690µs100ns).
+2026-09-24T09:41:00.674+05:30  WARN 23364 --- [movie-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10h38m37s417ms86µs200ns).
+2026-09-24T09:43:38.473+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-24T09:48:38.477+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-24T09:53:38.480+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-24T09:58:38.484+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-24T10:03:38.891+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-24T10:08:38.946+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-24T10:13:38.949+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-24T10:18:38.955+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-24T10:23:38.958+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-24T10:28:38.961+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-24T10:33:38.968+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-24T10:38:38.972+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-24T10:43:38.981+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-24T10:48:38.989+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-24T10:53:38.993+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-24T10:58:38.997+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-24T16:11:41.057+05:30  WARN 23364 --- [movie-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5h12m44s250ms238µs200ns).
+2026-09-24T16:15:48.814+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-24T16:22:40.747+05:30  WARN 23364 --- [movie-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m29s669ms151µs800ns).
+2026-09-24T18:19:44.036+05:30  WARN 23364 --- [movie-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h57m3s289ms146µs900ns).
+2026-09-24T18:21:21.774+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-24T18:26:21.785+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-24T18:50:38.835+05:30  WARN 23364 --- [movie-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=23m24s707ms492µs400ns).
+2026-09-24T19:36:57.729+05:30  WARN 23364 --- [movie-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=44m18s883ms614µs300ns).
+2026-09-24T20:09:17.493+05:30  WARN 23364 --- [movie-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=32m19s764ms678µs300ns).
+2026-09-24T20:09:55.136+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-24T20:25:26.868+05:30  WARN 23364 --- [movie-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m39s372ms90µs300ns).
+2026-09-24T20:30:04.506+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-24T20:35:04.510+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-24T20:52:14.806+05:30  WARN 23364 --- [movie-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m47s914ms35µs).
+2026-09-24T20:55:22.425+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-25T11:14:02.920+05:30  WARN 23364 --- [movie-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14h18m52s937ms490µs800ns).
+2026-09-25T13:19:05.876+05:30  WARN 23364 --- [movie-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h2m31s660ms265µs500ns).
+2026-09-25T13:20:43.385+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-25T13:25:43.389+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-25T13:30:43.394+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-25T13:35:43.399+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-25T13:40:49.809+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-25T13:44:16.067+05:30  WARN 23364 --- [movie-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m3s731ms245µs500ns).
+2026-09-25T14:03:06.112+05:30  WARN 23364 --- [movie-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m20s37ms193µs600ns).
+2026-09-25T18:46:09.246+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-25T22:02:55.542+05:30  WARN 23364 --- [movie-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7h59m54s565ms657µs600ns).
+2026-09-25T22:07:33.013+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-25T22:12:33.020+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-25T22:17:33.026+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-25T22:22:33.033+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-25T22:27:33.050+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-25T22:32:33.066+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-25T22:37:33.083+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-26T10:01:32.428+05:30  WARN 23364 --- [movie-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11h21m10s449ms827µs300ns).
+2026-09-26T10:03:09.856+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-26T10:08:09.863+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-26T10:13:09.867+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-26T10:18:09.883+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-26T10:23:09.950+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-26T10:28:10.039+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-26T10:33:10.125+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-26T10:38:10.206+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-26T10:43:10.270+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-26T10:48:10.334+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-26T10:53:10.400+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-26T10:58:10.448+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-26T12:53:46.548+05:30  WARN 23364 --- [movie-service] [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h54m43s452ms473µs200ns).
+2026-09-26T12:57:24.694+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-26T13:02:24.702+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-26T13:07:24.726+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-26T13:12:24.737+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-09-26T13:17:24.743+05:30  INFO 23364 --- [movie-service] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3 d 01:35 h
+[INFO] Finished at: 2026-09-26T13:22:18+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.3.5:run (default-cli) on project movie-service: Process terminated with exit code: -1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

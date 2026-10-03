@@ -1,0 +1,23 @@
+FROM maven:3.9.9-eclipse-temurin-17 AS build
+ARG SERVICE_MODULE
+WORKDIR /workspace
+COPY pom.xml .
+COPY eureka-server/pom.xml eureka-server/pom.xml
+COPY api-gateway/pom.xml api-gateway/pom.xml
+COPY user-service/pom.xml user-service/pom.xml
+COPY movie-service/pom.xml movie-service/pom.xml
+COPY show-service/pom.xml show-service/pom.xml
+COPY booking-service/pom.xml booking-service/pom.xml
+RUN mvn -B -pl ${SERVICE_MODULE} -am dependency:go-offline
+COPY . .
+RUN mvn -B -pl ${SERVICE_MODULE} -am package -DskipTests
+
+FROM eclipse-temurin:17-jre-jammy
+RUN apt-get update \
+	&& apt-get install -y --no-install-recommends curl \
+	&& rm -rf /var/lib/apt/lists/*
+ARG SERVICE_MODULE
+WORKDIR /app
+COPY --from=build /workspace/${SERVICE_MODULE}/target/${SERVICE_MODULE}-1.0.0.jar app.jar
+EXPOSE 8080
+CMD ["java", "-jar", "app.jar"]
